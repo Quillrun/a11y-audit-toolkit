@@ -1,0 +1,76 @@
+{
+  "title": "Example Site — Home",
+  "lang": "en",
+  "url": "https://example.com/",
+  "headings": [
+    {"level": "H1", "text": "Welcome to Example Site", "visible": true},
+    {"level": "H2", "text": "Our Services", "visible": true},
+    {"level": "H2", "text": "Contact Us", "visible": true},
+    {"level": "H3", "text": "Web Development", "visible": true}
+  ],
+  "landmarks": {
+    "main": 1,
+    "nav": ["Primary Navigation"],
+    "header": 1,
+    "footer": 1,
+    "banner": 0,
+    "complementary": 0,
+    "search": 0
+  },
+  "viewport": "width=device-width, initial-scale=1",
+  "skipLink": {
+    "href": "#main",
+    "text": "Skip to main content",
+    "targetExists": true,
+    "isFirstFocusable": true
+  },
+  "liveRegions": [
+    {"tag": "DIV", "id": null, "role": "status", "ariaLive": "polite", "ariaAtomic": "true", "ariaRelevant": null, "childCount": 0}
+  ],
+  "images": [
+    {"alt": "Team working together", "ariaHidden": null, "role": null, "hasAlt": true, "width": 1200, "height": 600},
+    {"alt": "", "ariaHidden": "true", "role": "presentation", "hasAlt": true, "width": 24, "height": 24}
+  ],
+  "svgs": [],
+  "formControls": [
+    {"tag": "INPUT", "type": "email", "ariaLabel": null, "ariaLabelledby": null, "ariaDescribedby": null, "ariaRequired": null, "required": false, "placeholder": "you@example.com", "hasVisibleLabel": true, "autocomplete": "email"}
+  ],
+  "unnamedButtons": [],
+  "unnamedLinks": [],
+  "linkCount": 12,
+  "telLinks": [],
+  "externalLinks": [
+    {"text": "GitHub", "hasNewWindowIndicator": false}
+  ],
+  "positiveTabindex": [],
+  "colorSamples": [
+    {"tag": "P", "text": "Welcome to our accessible site", "color": "rgb(33, 33, 33)", "bg": "rgb(255, 255, 255)", "fontSize": "16px", "fontWeight": "400"},
+    {"tag": "SPAN", "text": "Learn more about our servic", "color": "rgb(100, 100, 100)", "bg": "rgb(255, 255, 255)", "fontSize": "14px", "fontWeight": "400"}
+  ],
+  "focusVisibleRuleCount": 3,
+  "reducedMotionRuleCount": 1,
+  "activeAnimations": 0,
+  "brokenAriaRefs": [],
+  "touchTargets": [
+    {"tag": "A", "text": "Terms", "width": 42, "height": 18, "tooSmall": true}
+  ],
+  "mediaElements": {
+    "videos": [],
+    "audios": [],
+    "iframes": [
+      {"src": "https://www.youtube.com/embed/dQw4w9WgXc", "title": "Product overview", "isVideo": true}
+    ]
+  },
+  "interactiveElements": [
+    {"index": 0, "tag": "A", "role": null, "type": null, "text": "Skip to main content", "tabindex": null, "isDisabled": false},
+    {"index": 1, "tag": "A", "role": null, "type": null, "text": "Home", "tabindex": null, "isDisabled": false},
+    {"index": 2, "tag": "A", "role": null, "type": null, "text": "About", "tabindex": null, "isDisabled": false},
+    {"index": 3, "tag": "INPUT", "role": null, "type": "email", "text": "", "tabindex": null, "isDisabled": false},
+    {"index": 4, "tag": "BUTTON", "role": null, "type": "submit", "text": "Subscribe", "tabindex": null, "isDisabled": false}
+  ],
+  "stickyElements": [
+    {"tag": "HEADER", "id": "site-header", "class": "header sticky", "position": "sticky", "height": 64}
+  ],
+  "consoleErrors": [],
+  "captureViewport": {"name": "desktop", "width": 1280, "height": 800}
+}

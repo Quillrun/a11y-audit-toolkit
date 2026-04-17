@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SPA Delayed-Render Fixture</title>
+</head>
+<body>
+  <main id="mount">
+    <noscript>Requires JavaScript</noscript>
+  </main>
+  <script>
+    // Simulate client-side hydration: content mounts 600ms after load.
+    // A capture that doesn't wait for it will only see the empty <main>
+    // and miss the <img> without alt, falsely reporting no issues.
+    // Delay must be long enough to outlast axe's own init + scan time.
+    // Observed: axe on a trivial page takes ~700ms even at --extra-wait-ms=0,
+    // so a 600ms mount is captured. 5000ms is well beyond that.
+    setTimeout(() => {
+      const main = document.getElementById('mount');
+      main.innerHTML = '<img src="logo.png"><button></button>';
+    }, 5000);
+  </script>
+</body>
+</html>

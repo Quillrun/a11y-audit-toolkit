@@ -1,0 +1,9 @@
+node_modules/
+audit-output/
+audit-evidence/
+*.png
+.DS_Store
+/pages.json
+.env
+*.log
+coverage/

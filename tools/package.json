@@ -1,0 +1,35 @@
+{
+  "name": "a11y-audit-toolkit",
+  "version": "1.0.0",
+  "description": "Multi-engine WCAG 2.2 Level AA accessibility audit toolkit — coordinates axe-core, Pa11y, Lighthouse, and IBM Equal Access with a 7-phase manual methodology",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "all": "node audit-all.mjs",
+    "discover": "node audit-discover.mjs",
+    "capture": "node audit-capture.mjs",
+    "axe": "node audit-axe.mjs",
+    "pa11y": "node audit-pa11y.mjs",
+    "lighthouse": "node audit-lighthouse.mjs",
+    "iba": "node audit-iba.mjs",
+    "merge": "node audit-merge.mjs",
+    "guide": "node audit-manual-guide.mjs",
+    "report": "node audit-report.mjs",
+    "diff": "node audit-diff.mjs",
+    "test": "node test/shared.test.mjs && node test/merge.test.mjs && node test/diff.test.mjs && node test/integration.test.mjs",
+    "test:unit": "node test/shared.test.mjs && node test/merge.test.mjs && node test/diff.test.mjs",
+    "test:integration": "node test/integration.test.mjs",
+    "syntax-check": "for f in audit-*.mjs lib/shared.mjs test/*.mjs; do node --check $f || exit 1; done; echo OK"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.11.1",
+    "accessibility-checker": "^4.0.16",
+    "chrome-launcher": "^1.2.1",
+    "lighthouse": "^13.1.0",
+    "pa11y": "^9.1.1",
+    "playwright": "^1.50.0"
+  },
+  "license": "MIT"
+}

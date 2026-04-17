@@ -1,0 +1,6 @@
+[
+  {"name": "home", "url": "/", "waitFor": "main", "tier": 1},
+  {"name": "about", "url": "/about", "waitFor": "h1", "tier": 2},
+  {"name": "contact", "url": "/contact", "waitFor": "form", "tier": 1},
+  {"name": "404", "url": "/nonexistent", "waitFor": "body", "tier": 3}
+]
