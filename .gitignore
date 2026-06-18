@@ -7,3 +7,8 @@ audit-evidence/
 .env
 *.log
 coverage/
+
+# secrets / auth state — never commit (Playwright session cookies, keys)
+auth.json
+*.pem
+*.key
